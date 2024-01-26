@@ -32,28 +32,21 @@ const PixelDensityResponsiveImage = ({ src, alt }) => {
   `;
 
   return (
-    <Picture>
+    <picture>
       <source type="image/avif" srcSet={avifSrcSet} />
       <source type="image/jpeg" srcSet={jpegSrcSet} />
-      <img src={src} alt={alt} />
-    </Picture>
+      <Image src={src} alt={alt} />
+    </picture>
   );
 };
 
-const Picture = styled.picture`
+const Image = styled.img`
   display: block;
   width: 100%;
   height: 300px;
   border-radius: 2px;
   margin-bottom: 8px;
-
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+  object-fit: cover;
 `;
 
 const Anchor = styled.a`

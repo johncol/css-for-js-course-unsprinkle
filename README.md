@@ -1,3 +1,5 @@
+Note: this repo is a clone of https://github.com/css-for-js/unsprinkle part of the course https://courses.joshwcomeau.com/css-for-js
+
 # Unsprinkle — Module 6 workshop
 
 In this workshop, we're going to optimize and improve an existing application.

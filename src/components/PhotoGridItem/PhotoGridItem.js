@@ -56,9 +56,9 @@ const Anchor = styled.a`
 `;
 
 const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const Tag = styled.li`
@@ -67,6 +67,13 @@ const Tag = styled.li`
   font-size: 0.875rem;
   font-weight: 475;
   color: var(--color-gray-800);
+  line-height: 1.8;
+
+  display: inline;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 `;
 
 export default PhotoGridItem;

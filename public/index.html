@@ -8,7 +8,9 @@
       content="width=device-width, initial-scale=1"
     />
     <title>Unsprinkle</title>
-    <style>
+
+    <!-- Local Definition of the Inter font family using the font file located in public/fonts/Inter-variable.woff2 -->
+    <!-- <style>
       @font-face {
         font-family: 'Inter';
         font-style: normal;
@@ -16,7 +18,12 @@
         font-display: swap;
         src: url(/fonts/Inter-variable.woff2) format('woff2');
       }
-    </style>
+      </style> -->
+
+    <!-- Fetch the font-face css for the Inter font family using google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
   </head>
 
   <body>
